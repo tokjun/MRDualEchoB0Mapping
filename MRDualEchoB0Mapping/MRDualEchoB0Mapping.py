@@ -195,7 +195,7 @@ class MRDualEchoB0MappingWidget(ScriptedLoadableModuleWidget):
     parametersFormLayout = qt.QFormLayout(parametersCollapsibleButton)
 
     #
-    # Interplation mode
+    # Interpolation mode
     #
     self.dispInterpFlagCheckBox = qt.QCheckBox()
     self.dispInterpFlagCheckBox.checked = 0
@@ -267,7 +267,7 @@ class MRDualEchoB0MappingWidget(ScriptedLoadableModuleWidget):
         refNode = self.referencePhaseSelector.currentNode()
         self.tag = refNode.AddObserver(vtk.vtkCommand.ModifiedEvent, self.onModelRefImageModifiedEvent)
       else: # Cannot set autoupdate 
-        self.autoUpdateCheckBox.checked = Falase
+        self.autoUpdateCheckBox.checked = False
     else:
       if self.tag:
         if self.referencePhaseSelector.currentNode():
@@ -300,7 +300,7 @@ class MRDualEchoB0MappingWidget(ScriptedLoadableModuleWidget):
 
   def onReload(self, moduleName="MRDualEchoB0Mapping"):
     # Generic reload method for any scripted module.
-    # ModuleWizard will subsitute correct default moduleName.
+    # ModuleWizard will substitute correct default moduleName.
 
     globals()[moduleName] = slicer.util.reloadScriptedModule(moduleName)
 

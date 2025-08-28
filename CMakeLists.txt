@@ -5,7 +5,7 @@ project(MRDualEchoB0Mapping)
 #-----------------------------------------------------------------------------
 # Extension meta-information
 set(EXTENSION_HOMEPAGE "http://www.example.com/Slicer/Extensions/MRDualEchoB0Mapping")
-set(EXTENSION_CATEGORY "IGT")
+set(EXTENSION_CATEGORY "Quantification")
 set(EXTENSION_CONTRIBUTORS "Junichi Tokuda (Brigham and Women's Hospital)")
 set(EXTENSION_DESCRIPTION "MR dual-echo B0 field mapping for susceptibility correction.")
 set(EXTENSION_ICONURL "http://www.example.com/Slicer/Extensions/MRDualEchoB0Mapping.png")
